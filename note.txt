@@ -1,0 +1,101 @@
+1. create react project: 
+npm create vite@latest
+
+2. move to created file:
+cd ./client
+
+3. install dependencies:
+npm install
+
+4. delete App.css, clear index.css and App.jsx(write rafce in this file)
+
+5. add font in css
+
+6. install Vite Tailwind.css(v4.1):
+npm install tailwindcss @tailwindcss/vite
+
+7. npm install lucide-react
+
+8. create components folder and pages folder in src/
+
+9. now create different pages:
+Login.jsx,
+Feed.jsx,'
+Messages.jsx,
+Connections.jsx,
+Discover.jsx,
+Profile.jsx,
+CreatePost.jsx,
+ChatBox.jsx,
+Layout.jsx(in this file we create logic that will be used in different pages and will be same everywhere)
+
+10. install react-router-dom to connect all those pages:
+npm install react-router-dom
+
+11. in main.js install BrowserRouter and use it instead of StrictMode:
+import { BrowserRouter } from 'react-router-dom'
+
+12. in App.jsx install Route and Routes and use it(create route path - es):
+import { Route, Routes } from 'react-router-dom'
+
+13. start designing Login.jsx page
+
+14. install clerk to implement already made sign up form(follow step-by-step) and import it in main.jsx too:
+https://dashboard.clerk.com/apps/app_374B2MfYhnLlkFgruqqc4dGuRq1/instances/ins_374B2LsG1uvVfz980gfOUmRzvdZ
+
+15. use clerk in Login.jsx
+
+16. In App.jsx import useUser and use it as variable with ternary operator in route 
+
+17. now create Sidebar.jsx page in components to add it in other pages and design Layout.jsx page
+
+18. create Loading.jsx file in components for if user is not logged in(so if user data is not available) or backend is sending response it will be shown while info is comming and use it in Layout.jsx
+
+19. now lets design and create logic for Sidebar.jsx
+
+20. now creat MenuItems.jsx to add menu items on sidebar
+
+21. now start designing Feed.jsx page(main content page right on the sidebar)
+
+22. con create StoriesBar.jsx to generate stories on other file and use it in Feed.jsx
+
+23. install moment package to add date format on storyes like it was posted how many hours, days or years ago:
+npm install moment
+
+and then import it in StoriesBar.jsx and use it
+
+24. create StoryModal.jsx component to deal with storyes and then write code in it
+
+25. install react-hot-toast to display toast notifications:
+npm install react-hot-toast
+
+26. install Toaster in App.jsx and use it to call it in other file(example:<Toaster />):
+import { Toaster } from 'react-hot-toast'
+
+27. start designing StoryViewer.jsx component
+
+27. after finishing StoryViewer then create PostCart.jsx component to create List of post's and start designing it
+
+28. then mount( or use ) this PostCart.jsx component in Feed.jsx in {/* Stories and post list */}
+
+29. now add classnames in Feed.jsx on {/* Right Sidebar */} content
+
+30. now for <h1>Recent messages</h1> in Feed.jsx we create new component RecentMessages.jsx and design it and them import it in Feeds instead of <h1>Recent Messages</h1> tag
+
+31. then i designed Connections.jsx file
+
+32. start designing Discover.jsx file
+
+33. create UserCard.jsx component to shows users in Discover.jsx page
+
+34. create UserProfileInfo.jsx component
+
+35. use UserProfileInfo.jsx in Profile.jsx and then continue
+
+36. after finishing UserProfileInfo.jsx page we start designing CreatePost.jsx
+
+37. after finishing CreatePost.jsx page we start creating ChatBox.jsx page
+
+37. after finishing ChatBox.jsx page we create new component ProfileModal.jsx to create modal('page') of editiong profile page
+
+38. then we use ProfileModal.jsx page in Profile.jsx page
