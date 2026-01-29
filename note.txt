@@ -99,3 +99,52 @@ import { Toaster } from 'react-hot-toast'
 37. after finishing ChatBox.jsx page we create new component ProfileModal.jsx to create modal('page') of editiong profile page
 
 38. then we use ProfileModal.jsx page in Profile.jsx page
+
+_________________________________________________________________________________
+
+start creating backend:
+
+39. create new folder outisde client filder called server and inside it create file server.js
+
+40. initialise node package manager, that means create package.json. open console of server folder and write:
+npm init -y
+
+41. install required packages for server(backend):
+npm install express cors dotenv mongoose multer
+
+express - is a backend web application framework for Node.js. It is designed for building web applications and APIs
+cors - is for help backend to connect to any frontend url
+dotenv - to create environment variables in project
+mongoose - to connect our project to mongoDB database
+Multer - is a node.js middleware for handling multipart/form-data we use it to send text and image
+
+42. next install new package:
+npm install --save-dev nodemon
+
+--save-dev -> this means to install this package in deveplopment environment only
+nodemon - means that the package name will be nodemon
+
+43. in package.json delete:
+    "test": "echo \"Error: no test specified\" && exit 1",
+and instead write:
+    "server": "nodemon server.js",
+it will automatically update server if any change happened.
+and also add:
+    "type": "module",
+
+44. then add little code for testing in server.js
+
+45. then create database in mongodb and get MONGODB_URL from it, creat .env file and paste it in this file
+
+46. then create config folder in backend and create db.js in it and write code in it
+
+47. after writing code in db.js file use it in server.js file
+
+48. then create models folder and create User.js file in it to store user data in mongodb database
+
+49. then write code in User.js file, we create schema to define what properties will be stored in database
+
+50. then we need to get users info after login and as we used clerk to build login page we are using inngest.com Webapp to help us in this case
+
+51. we signup in inngest and create organization, then open from other window inngest home page and open DOCS and open Node.js page and follow installing steps:
+npm install inngest
