@@ -148,3 +148,17 @@ and also add:
 
 51. we signup in inngest and create organization, then open from other window inngest home page and open DOCS and open Node.js page and follow installing steps:
 npm install inngest
+
+52. then create folder inngest and in it create file index.js,
+then from DOCS of inngest web page copy and paste in file:
+import { Inngest } from "inngest";
+
+// Create a client to send and receive events
+export const inngest = new Inngest({ id: "my-app" });
+
+// Create an empty array where we'll export future Inngest functions
+export const functions = [];
+
+53. then set endpoint of inngest also from DOCS tutorial steps and put it in server.js
+
+54. then in index.js file create functions
