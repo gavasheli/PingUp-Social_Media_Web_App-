@@ -162,3 +162,5 @@ export const functions = [];
 53. then set endpoint of inngest also from DOCS tutorial steps and put it in server.js
 
 54. then in index.js file create functions
+
+55. after that we deploied backend(server) on vercel.com using inngest.com. video time approximately 6:10:00-6:23:30
